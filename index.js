@@ -8,30 +8,35 @@ const user = {
 const highScorer =[
   {
     name: "Arjun",
-    score: 3
+    score: 4
   }
 ]
 
 const questions = [
   {
-    question: "Short name of Shah Rukh Khan?",
-    answer: "srk" 
+    question: "What is my name?",
+    answer: "Arjun" 
   },
   {
-    question: "SRK's spouse Name?",
-    answer: "Gauri Khan" 
+    question: "What is my age?",
+    answer: "21" 
   },
   {
-    question: "How many children SRK have?",
-    answer: "3" 
+    question: "Do i love programming?",
+    answer: "yes" 
   },
   {
-    question: "First movie which was released on theater?",
-    answer: "Deewana" 
+    question: "what can i do whole life?",
+    answer: "programming" 
   },
   {
-    question: "First appearance of SRK in which movies or serial?",
-    answer: "Fauji" 
+    question: "What is my dream company?",
+    answer: "Google" 
+  }
+  ,
+  {
+    question: "Which is my dream country?",
+    answer: "usa" 
   }
   
 ]
@@ -77,7 +82,7 @@ const questions = [
     console.log('_______________')
 
   }
-  console.log('Welcome to the game : \n \n *** How well do you know Shah Rukh Khan *** \n')
+  console.log('Welcome to the game : \n \n *** How well do you know me *** \n')
 
   user.name = readlineSync.question("\nYour Name : ")
 
@@ -85,7 +90,6 @@ const questions = [
 
   game();
 
-  console.log("\nHey yor Final Score : ", user.score)
+  console.log("\nHey your Final Score : ", user.score)
 
 checkHighScore(user.score)
-  
